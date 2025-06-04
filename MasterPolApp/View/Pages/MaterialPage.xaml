@@ -1,0 +1,36 @@
+﻿<Page x:Class="MasterPolApp.View.Pages.MaterialPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MasterPolApp.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MaterialPage">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Top">
+            <Separator Height="80" Background="Transparent"/>
+            <DataGrid x:Name="DGMaterial"
+                      
+                      CanUserResizeColumns="False"
+                      CanUserDeleteRows="False"
+                      CanUserReorderColumns="False"
+                      CanUserResizeRows="False"
+                      CanUserAddRows="False"
+                      IsReadOnly="True"
+                      RowBackground="{StaticResource SecondaryColor}"
+                      CanUserSortColumns="False"
+                      Background="{StaticResource SecondaryColor}" 
+                      AutoGenerateColumns="False" 
+>
+                <DataGrid.Columns >
+                    <DataGridTextColumn Header="ID" Binding="{Binding MaterialID}"/>
+                    <DataGridTextColumn Header="MaterialType" Binding="{Binding MaterialType}"/>
+                    <DataGridTextColumn Header="MaterialBrakPercent" Binding="{Binding MaterialBrakPercent}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Page>

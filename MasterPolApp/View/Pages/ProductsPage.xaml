@@ -1,0 +1,42 @@
+﻿<Page x:Class="MasterPolApp.View.Pages.ProductsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MasterPolApp.View.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ProductsPage">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Top">
+            <Separator Height="80" Background="Transparent"/>
+            <DataGrid x:Name="DGProducts"
+                      
+                      CanUserResizeColumns="False"
+                      CanUserDeleteRows="False"
+                      CanUserReorderColumns="False"
+                      CanUserResizeRows="False"
+                      CanUserAddRows="False"
+                      IsReadOnly="True"
+                      RowBackground="{StaticResource SecondaryColor}"
+                      CanUserSortColumns="False"
+                      Background="{StaticResource SecondaryColor}" 
+                      AutoGenerateColumns="False" 
+>
+                <DataGrid.Columns >
+                    <DataGridTextColumn Header="ID" Binding="{Binding ProductsID}"/>
+                    <DataGridTextColumn Header="PartnerType" Binding="{Binding PartnerType}"/>
+                    <DataGridTextColumn Header="NamePartner" Binding="{Binding NamePartner}"/>
+                    <DataGridTextColumn Header="Director" Binding="{Binding Director}"/>
+                    <DataGridTextColumn Header="ParenerEmail" Binding="{Binding ParenerEmail}"/>
+                    <DataGridTextColumn Header="PartnerPhone" Binding="{Binding PartnerPhone}"/>
+                    <DataGridTextColumn Header="UPartnerAdress" Binding="{Binding UPartnerAdress}"/>
+                    <DataGridTextColumn Header="INN" Binding="{Binding INN}"/>
+                    <DataGridTextColumn Header="Rating" Binding="{Binding Rating}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Page>
