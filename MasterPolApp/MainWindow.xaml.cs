@@ -15,8 +15,6 @@ namespace MasterPolApp
             InitializeComponent();
             MyService.MainNavigationFrameApp = MainFrame;
             MyService.DB = new MasterPoldbEntities1();
-
-            MainFrame.Navigate(new LoginPage());
         }
 
         private void PartnerProducts_Button_Click(object sender, RoutedEventArgs e)
@@ -47,7 +45,6 @@ namespace MasterPolApp
         private void TextBlock_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             Application.Current.Shutdown();
-
         }
     }
 }

@@ -12,29 +12,9 @@
         <StackPanel HorizontalAlignment="Center"
                     VerticalAlignment="Top">
             <Separator Height="80" Background="Transparent"/>
-            <DataGrid x:Name="DGProducts"
-                      
-                      CanUserResizeColumns="False"
-                      CanUserDeleteRows="False"
-                      CanUserReorderColumns="False"
-                      CanUserResizeRows="False"
-                      CanUserAddRows="False"
-                      IsReadOnly="True"
-                      RowBackground="{StaticResource SecondaryColor}"
-                      CanUserSortColumns="False"
-                      Background="{StaticResource SecondaryColor}" 
-                      AutoGenerateColumns="False" 
->
-                <DataGrid.Columns >
-                    <DataGridTextColumn Header="ID" Binding="{Binding ProductsID}"/>
-                    <DataGridTextColumn Header="PartnerType" Binding="{Binding PartnerType}"/>
-                    <DataGridTextColumn Header="NamePartner" Binding="{Binding NamePartner}"/>
-                    <DataGridTextColumn Header="Director" Binding="{Binding Director}"/>
-                    <DataGridTextColumn Header="ParenerEmail" Binding="{Binding ParenerEmail}"/>
-                    <DataGridTextColumn Header="PartnerPhone" Binding="{Binding PartnerPhone}"/>
-                    <DataGridTextColumn Header="UPartnerAdress" Binding="{Binding UPartnerAdress}"/>
-                    <DataGridTextColumn Header="INN" Binding="{Binding INN}"/>
-                    <DataGridTextColumn Header="Rating" Binding="{Binding Rating}"/>
+            <DataGrid x:Name="DGProducts">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="sda" Binding="{Binding ProdductsID}"></DataGridTextColumn>
                 </DataGrid.Columns>
             </DataGrid>
         </StackPanel>

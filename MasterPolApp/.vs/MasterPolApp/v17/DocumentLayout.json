@@ -1,0 +1,62 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Silly\\Desktop\\MasterPolApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F3B8F16F-8611-4A3A-B1E8-E6C8B4C6E580}|MasterPolApp.csproj|c:\\users\\silly\\desktop\\masterpolapp\\view\\pages\\partnerproductspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F3B8F16F-8611-4A3A-B1E8-E6C8B4C6E580}|MasterPolApp.csproj|solutionrelative:view\\pages\\partnerproductspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PartnerProductsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Silly\\Desktop\\MasterPolApp\\View\\Pages\\PartnerProductsPage.xaml",
+              "RelativeDocumentMoniker": "View\\Pages\\PartnerProductsPage.xaml",
+              "ToolTip": "C:\\Users\\Silly\\Desktop\\MasterPolApp\\View\\Pages\\PartnerProductsPage.xaml",
+              "RelativeToolTip": "View\\Pages\\PartnerProductsPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-06T03:41:20.618Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 954,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{5a4e9529-b6a0-46b5-be4f-0f0b239bc0eb}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

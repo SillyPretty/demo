@@ -12,27 +12,24 @@
         <StackPanel HorizontalAlignment="Center"
                     VerticalAlignment="Top">
             <Separator Height="80" Background="Transparent"/>
-            <DataGrid x:Name="DGMaterial"
-                      
-                      CanUserResizeColumns="False"
-                      CanUserDeleteRows="False"
-                      CanUserReorderColumns="False"
-                      CanUserResizeRows="False"
-                      CanUserAddRows="False"
-                      IsReadOnly="True"
-                      RowBackground="{StaticResource SecondaryColor}"
-                      CanUserSortColumns="False"
-                      Background="{StaticResource SecondaryColor}" 
-                      AutoGenerateColumns="False" 
->
-                <DataGrid.Columns >
-                    <DataGridTextColumn Header="ID" Binding="{Binding PartnerProductsID}"/>
-                    <DataGridTextColumn Header="ProductTypeID" Binding="{Binding ProductTypeID}"/>
-                    <DataGridTextColumn Header="ProductName" Binding="{Binding ProductName}"/>
-                    <DataGridTextColumn Header="Articul" Binding="{Binding Articul}"/>
-                    <DataGridTextColumn Header="MinCountForPartner" Binding="{Binding MinCountForPartner}"/>
-                </DataGrid.Columns>
-            </DataGrid>
+            <ListView x:Name="LVMaterial"
+                      Background="{StaticResource SecondaryColor}"
+                      IsEnabled="False">            
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="ID" DisplayMemberBinding="{Binding PartnerProductsID}" Width="Auto"/>
+                        <GridViewColumn Header="ProductTypeID" DisplayMemberBinding="{Binding ProductTypeID}" Width="Auto"/>
+                        <GridViewColumn Header="ProductName" DisplayMemberBinding="{Binding ProductName}" Width="Auto"/>
+                        <GridViewColumn Header="Articul" DisplayMemberBinding="{Binding Articul}" Width="Auto"/>
+                        <GridViewColumn Header="MinCountForPartner" DisplayMemberBinding="{Binding MinCountForPartner}" Width="Auto"/>
+                    </GridView>
+                </ListView.View>
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="Background" Value="{StaticResource SecondaryColor}"/>
+                    </Style>
+                </ListView.ItemContainerStyle>
+            </ListView>
         </StackPanel>
     </Grid>
 </Page>
